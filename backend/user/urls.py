@@ -11,4 +11,6 @@ router.register(r'groups', GroupViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('register/', views.RegisterView.as_view(), name='register'),
+    path('login/', views.CreateTokenView.as_view(), name='login'),
+
 ]
