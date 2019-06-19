@@ -61,18 +61,3 @@ class UserProfile(models.Model):
         related_name='profile_village', null=True)
     photo = models.ImageField(upload_to='uploads', blank=True)
 
-    @property
-    def province_name(self):
-        return self.province.name
-
-    @property
-    def regency_name(self):
-        return self.regency.name
-
-    @property
-    def district_name(self):
-        return self.district.name
-
-    @property
-    def village_name(self):
-        return self.village.name
