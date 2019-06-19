@@ -13,10 +13,10 @@ class UserProfileInline(admin.StackedInline):
 
 class UserAdmin(BaseUserAdmin):
     ordering = ['id']
-    list_display = ['email', 'name', 'is_active']
+    list_display = ['email', 'username', 'is_active']
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        (_('Personal Info'), {'fields': ('name',)}),
+        (_('Personal Info'), {'fields': ('username',)}),
         (
             _('Permissions'),
             {'fields': ('is_active', 'is_superuser', 'groups')}
