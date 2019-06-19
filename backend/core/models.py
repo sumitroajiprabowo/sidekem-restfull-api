@@ -60,4 +60,3 @@ class UserProfile(models.Model):
         Village, on_delete=models.CASCADE,
         related_name='profile_village', null=True)
     photo = models.ImageField(upload_to='uploads', blank=True)
-
