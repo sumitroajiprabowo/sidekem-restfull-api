@@ -13,4 +13,5 @@
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/bowo-anakdesa/sidekem-restfull-api.svg">
 <img alt="Website" src="https://img.shields.io/website/https/sidekem.pemalangkab.go.id.svg">
 <img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/django.svg">
+<img alt="GitHub" src="https://img.shields.io/github/license/bowo-anakdesa/sidekem-restfull-api.svg">
 </p>
