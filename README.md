@@ -15,4 +15,5 @@
 <img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/django.svg">
 <img alt="GitHub" src="https://img.shields.io/github/license/bowo-anakdesa/sidekem-restfull-api.svg">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/bowo-anakdesa/sidekem-restfull-api.svg">
+<a href="https://requires.io/github/bowo-anakdesa/sidekem-restfull-api/requirements/?branch=master"><img src="https://requires.io/github/bowo-anakdesa/sidekem-restfull-api/requirements.svg?branch=master" alt="Requirements Status" /></a>
 </p>
