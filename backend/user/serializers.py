@@ -3,9 +3,13 @@ from django.contrib.auth.models import Group
 from django.utils.translation import ugettext_lazy as _
 from rest_framework import serializers
 from core.models import UserProfile
+# from areacode.serializers import ProvinceSerializer, RegencySerializer,\
+#     DistrictSerializer, VillageSerializer
 
 
 class GroupSerializer(serializers.ModelSerializer):
+    # groups = serializers.SlugRelatedField(
+    #     many=True, read_only=True, slug_field="name")
 
     class Meta:
         model = Group()
@@ -13,6 +17,32 @@ class GroupSerializer(serializers.ModelSerializer):
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
+    # province = ProvinceSerializer(read_only=False)
+    # regency = RegencySerializer(read_only=False)
+    # district = DistrictSerializer(read_only=False)
+    # village = VillageSerializer(read_only=False)
+
+    province = serializers.SerializerMethodField()
+    regency = serializers.SerializerMethodField()
+    district = serializers.SerializerMethodField()
+    village = serializers.SerializerMethodField()
+
+    # province = serializers.SlugRelatedField(
+    #     read_only=False,
+    #     slug_field='name'
+    # )
+
+    def get_province(self, obj):
+        return obj.user.profile.province.name
+
+    def get_regency(self, obj):
+        return obj.user.profile.regency.name
+
+    def get_district(self, obj):
+        return obj.user.profile.district.name
+
+    def get_village(self, obj):
+        return obj.user.profile.village.name
 
     class Meta:
         model = UserProfile
@@ -21,6 +51,15 @@ class UserProfileSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
     profile = UserProfileSerializer(required=True)
+    # groups = GroupSerializer(many=False)
+    # groups = serializers.SerializerMethodField()
+
+    # return [group.name for group in obj.groups]
+    # def get_groups(self):
+    #     groups = Group.objects.filter(user = request.user)
+
+    def get_groups(self, obj):
+        return obj.groups.values_list('name', flat=True)
 
     class Meta:
         model = get_user_model()
