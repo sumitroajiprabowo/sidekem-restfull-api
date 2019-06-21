@@ -4,3 +4,6 @@ Pillow>=5.4.0,<6.0.0
 psycopg2>2.7.5,<2.8.0
 
 flake8>=3.6.0,<3.7.0
+pytest>=4.5.0,<4.6
+pytest-django>=3.4.8,<3.5
+pytest-cov>=2.7.1
