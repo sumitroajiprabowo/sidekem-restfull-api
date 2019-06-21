@@ -9,3 +9,6 @@ before_script: pip install docker-compose
 
 script:
   - docker-compose run app sh -c "python manage.py test && flake8"
+  
+after_success:
+  bash <(curl -s https://codecov.io/bash)
