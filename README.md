@@ -7,4 +7,5 @@
 <img src="https://img.shields.io/pypi/pyversions/django.svg" alt="Python Version">
 <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/bowo-anakdesa/sidekem-restfull-api.svg">
 <img alt="Snyk Vulnerabilities for GitHub Repo" src="https://img.shields.io/snyk/vulnerabilities/github/bowo-anakdesa/sidekem-restfull-api.svg">
+<a href="https://www.codacy.com/app/bowo-anakdesa/sidekem-restfull-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bowo-anakdesa/sidekem-restfull-api&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/dfb2e4f1500244f2a67dbc0eda295291"/></a>
 </p>
