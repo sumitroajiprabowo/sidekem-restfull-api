@@ -1,1 +1,1 @@
-# SIDEKEM Restfull API
+<p align="center"><a href="https://sidekem.pemalangkab.go.id" target="_blank" rel="noopener noreferrer"><img width="200" src="https://i2.wp.com/kandang.desa.id/wp-content/uploads/2018/07/SIDEKEM.png?ssl=1" alt="Vue logo"></a></p>
