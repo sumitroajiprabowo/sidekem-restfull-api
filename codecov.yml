@@ -1,2 +1,15 @@
-codecov:
-  token: c302b941-16df-49d5-97fc-f1b5c30d6f06
+# Run this to validate this file:
+# curl --data-binary @codecov.yml https://codecov.io/validate
+coverage:
+  precision: 5
+  round: down
+  status:
+    project:
+      default:
+        target: auto
+        if_no_uploads: error
+    patch:
+      default:
+        if_no_uploads: error
+    changes: true
+comment: true
