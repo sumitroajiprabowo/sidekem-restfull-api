@@ -49,14 +49,17 @@ class UserProfile(models.Model):
         related_name='profile')
     province = models.ForeignKey(
         Province, on_delete=models.CASCADE,
-        related_name='profile_province', null=True)
+        related_name='province', null=True)
     regency = models.ForeignKey(
         Regency, on_delete=models.CASCADE,
-        related_name='profile_regency', null=True)
+        related_name='regency', null=True)
     district = models.ForeignKey(
         District, on_delete=models.CASCADE,
-        related_name='profile_district', null=True)
+        related_name='district', null=True)
     village = models.ForeignKey(
         Village, on_delete=models.CASCADE,
-        related_name='profile_village', null=True)
+        related_name='village', null=True)
     photo = models.ImageField(upload_to='uploads', blank=True)
+
+    def __str__(self):
+        return "Profile of {}".format(self.user.email)
