@@ -9,6 +9,7 @@ class Province(models.Model):
         return self.name
 
     class Meta:
+        ordering = ['id']
         db_table = "provinces"
 
 
@@ -21,6 +22,7 @@ class Regency(models.Model):
         return self.name
 
     class Meta:
+        ordering = ['id']
         db_table = "regencies"
 
 
@@ -33,6 +35,7 @@ class District(models.Model):
         return self.name
 
     class Meta:
+        ordering = ['id']
         db_table = "districts"
 
 
@@ -46,4 +49,5 @@ class Village(models.Model):
         return self.name
 
     class Meta:
+        ordering = ['id']
         db_table = "villages"
