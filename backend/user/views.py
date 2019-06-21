@@ -33,3 +33,9 @@ class ProfileView(generics.RetrieveUpdateAPIView):
     def get_object(self):
         """Retrieve and return authentication user"""
         return self.request.user
+
+# class UserProfileViewSet(viewsets.ModelViewSet):
+#     queryset = User.objects.all()
+#     serializer_class = UserSerializer
+#     authentication_classes = (authentication.TokenAuthentication,)
+#     permission_classes = (permissions.IsAuthenticated,)
