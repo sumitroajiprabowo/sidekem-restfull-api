@@ -6,7 +6,6 @@
 </a>
 <a href="https://discord.gg/UHHT8k"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg" alt="Chat"></a>
 <img src="https://img.shields.io/pypi/pyversions/django.svg" alt="Python Version">
-<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/bowo-anakdesa/sidekem-restfull-api.svg">
 <a href="https://www.codacy.com/app/bowo-anakdesa/sidekem-restfull-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bowo-anakdesa/sidekem-restfull-api&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/dfb2e4f1500244f2a67dbc0eda295291"/></a>
 <a href="https://github.com/bowo-anakdesa/sidekem-restfull-api/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/bowo-anakdesa/sidekem-restfull-api.svg">
 <a href="https://github.com/bowo-anakdesa/sidekem-restfull-api/commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/bowo-anakdesa/sidekem-restfull-api.svg">
